@@ -28,6 +28,8 @@ extension Color {
     }
 
     /// Converts the Color to a hex string in `#RRGGBB` or `#RRGGBBAA` format
+    /// - Parameter includeAlpha: If true, includes alpha channel in output. Currently unused
+    ///   but provides complete API for potential future alpha transparency requirements.
     func toHex(includeAlpha: Bool = false) -> String? {
         let nsColor = NSColor(self)
         guard let rgbColor = nsColor.usingColorSpace(.sRGB) else {

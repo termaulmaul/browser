@@ -130,18 +130,6 @@ struct FavTabItem: View {
                 Label("Duplicate Tab", systemImage: "doc.on.doc")
             }
 
-            // Divider()
-
-            //      Menu("Move to Container") {
-            //        ForEach(containers) { container in
-            //            if container.id != tabManager.activeContainer?.id {
-            //            Button(action: { onMoveToContainer(container) }) {
-            //              Label(container.title, systemImage: container.icon)
-            //            }
-            //          }
-            //        }
-            //      }
-
             Divider()
 
             Button(role: .destructive, action: onClose) {

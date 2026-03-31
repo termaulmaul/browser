@@ -3,6 +3,11 @@ import SwiftUI
 
 private let logger = Logger(subsystem: "com.orabrowser.ora", category: "Importer")
 
+// TODO: Complete Arc browser import integration
+// These data structures define the schema for importing tabs, spaces, and containers
+// from Arc browser's StorableSidebar.json file. The integration is intentionally
+// incomplete pending full feature implementation.
+
 struct Root: Decodable {
     let sidebar: Sidebar
 }

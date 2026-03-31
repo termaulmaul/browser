@@ -183,6 +183,8 @@ private class GlobalHoverTracker {
             let inBand = band.contains(mouse)
             let effective = insideBase || inBand
 
+            // Debug overlay: Uncomment to visualize mouse tracking bands during development
+            // Kept commented to avoid performance overhead in production builds
 //            #if DEBUG
 //            DispatchQueue.main.async {
 //                view.showDebugOverlay(for: band)

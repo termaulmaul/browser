@@ -37,15 +37,6 @@ struct SectionDropDelegate: DropDelegate {
                     from.order = maxOrder + 1
                     try? self.tabManager.modelContext.save()
                 }
-                // else if let to = self.items.last {
-                // if isInSameSection(from: from, to: to) {
-                // withAnimation(.spring(response: 0.3, dampingFraction: 0.8)) {
-                //   container.reorderTabs(from: from, to: to)
-                // }
-                // } else {
-                // moveTabBetweenSections(from: from, to: to)
-                // }
-                // }
             }
         }
     }

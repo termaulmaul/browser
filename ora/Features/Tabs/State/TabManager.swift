@@ -364,10 +364,6 @@ class TabManager: ObservableObject {
                 .first
             {
                 self.activateTab(nextTab)
-
-                //            } else if let nextContainer = containers.first(where: { $0.id != tab.container.id }) {
-                //                self.activateContainer(nextContainer)
-                //
             } else {
                 self.activeTab = nil
             }
