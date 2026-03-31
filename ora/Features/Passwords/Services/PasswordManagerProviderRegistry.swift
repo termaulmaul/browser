@@ -12,6 +12,9 @@ enum PasswordManagerProviderKind: String, CaseIterable, Codable, Identifiable {
 
 enum PasswordManagerAutofillMode {
     case builtInOverlay
+    /// Reserved for future integration with third-party password managers
+    /// (e.g., 1Password, Bitwarden) that provide their own autofill surfaces.
+    /// Currently unused but preserved for planned native provider integrations.
     case nativeProviderOverlay
 }
 
