@@ -45,11 +45,6 @@ final class FaviconService: ObservableObject {
         return sourceURLCache[normalizedDomain] ?? canonicalURL(for: normalizedDomain)
     }
 
-    func faviconURL(forSearchURL searchURL: String) -> URL? {
-        guard let domain = extractDomain(from: searchURL) else { return nil }
-        return canonicalURL(for: domain)
-    }
-
     private func extractDomain(from searchURL: String) -> String? {
         let trimmed = searchURL.trimmingCharacters(in: .whitespacesAndNewlines)
         guard !trimmed.isEmpty else { return nil }
